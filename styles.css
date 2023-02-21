@@ -1,0 +1,182 @@
+:root {
+    --color-white: #f0f0f0;
+    --color-beige: #f2d4b7;
+    --color-brown: #bd7638;
+    --color-dark-brown: #514644;
+    --font-style-poppins: 'Poppins', sans-serif;
+    --font-style-pacifico: 'Pacifico', sans-serif;
+
+    --primary-light: #ddd;
+    --primary-dark: #222831;
+    --secondary-dark: #393e46;
+    --secondary-dark-hover: #4a4f57;
+    --secondary-dark-active: #5b5f68;
+    --header: #111720;
+    --primary-yellow: #fac650;
+
+    
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+}
+  
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+/* (100%/16px)*10 = 62.5% */
+html {
+    font-size: 62.5%; /* 10px */
+}
+
+body {
+    font-family: var(--font-style-poppins);
+    font-size: 1.8rem; /* 18px */
+    line-height: 1.4;
+    /* background-image: url("images/kitchen-utensils.jpg"); */
+    background-color: var(--color-beige);
+    scroll-behavior: smooth;
+    min-width: 42rem; /* 420px */
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 0; /*10px 0 0 */
+}
+
+.logo {
+    height: 14rem; /* 140px */
+    width: 14rem; /* 140px */
+    margin: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    grid-gap: 4rem; /* 40px */
+    width: 100%;
+    max-width: 128rem; /* 1280px */
+    margin: 0 auto;
+    margin-bottom: 6rem; /* 60px */
+    margin-top: 2rem; /* 20px */
+}
+
+.project {
+    background: var(--color-dark-brown);
+    border-radius: 0.8rem; /* 8px */
+}
+
+.project-tile {
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+}
+
+.project-tile:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is 
+    too large, it will go outside of the viewport) */
+}
+
+.project-title {
+    font-size: 1.6rem; /* 16px */
+    text-align: center;
+    color: var(--primary-light);
+}
+
+.project-image {
+    height: calc(100% - 4rem); /* 68px */
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.8rem 0.8rem 0 0; /* 8px */
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; /* 10px */
+    width: 100%;
+    padding: 1rem; /* 10px */
+    color: var(--primary-light);
+    font-size: 2rem; /* 20px */
+    background-color: var(--main-gray);
+}
+
+.fa-github {
+    color: var(--primary-light);
+    font-size: 2.3rem; /* 23px */
+    transition: transform 0.3s ease-in-out;
+}
+  
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
+}
+
+a:link { 
+    text-decoration: none; 
+}
+
+/* a, a:visited {
+    color: var(--color-beige);
+}
+
+a:active {
+    color: var(--color-beige);
+} */
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* ================================================================= */
+/* Media Queries */
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+    html {
+      font-size: 60%; 
+    }
+}
+  
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+    html {
+        font-size: 58%;
+    }
+}
+  
+/* 481px / 16px = 61.25em */
+@media (max-width: 30.625em) {
+    html {
+        font-size: 56%;
+    }
+}
+  
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em){
+    html {
+        font-size: 54%;
+    }
+}
+
+@media only screen
+and (max-width: 75em),
+(max-width: 61.25em), 
+(max-width: 30.625em), 
+(max-width: 28.75em) {
+    .grid {
+        padding: 0 5rem; /* 0 50px */
+    }
+}

@@ -4,14 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico|Poppins" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
     <title>Odin Recipes</title>
 </head>
 <body>
-    <h1>Odin Recipes</h1>
-    <ul>
-        <li><a href="recipes/sinigang.html">Sinigang</a></li>
-        <li><a href="recipes/chicken-adobo.html">Chicken Adobo</a></li>
-        <li><a href="recipes/bicol-express.html">Bicol Express</a></li>
-    </ul>
+    <div class="container">
+        <header>
+            <a href="index.html">
+                <img src="images/logo.png" class="logo" alt="logo" />
+            </a>
+        </header>
+
+        <main>
+            <div class="grid">
+                <a href="recipes/sinigang.html" target="_blank" class="project project-tile">
+                    <img class="project-image" src="images/sinigang.jpg" alt="sinigang" />
+                    <p class="project-title">Sinigang</p>
+                </a>
+                <a href="recipes/chicken-adobo.html" target="_blank" class="project project-tile">
+                    <img class="project-image" src="images/chicken-adobo.jpg" alt="chicken-adobo" />
+                    <p class="project-title">Chicken Adobo</p>
+                </a>
+                <a href="recipes/bicol-express.html" target="_blank" class="project project-tile">
+                    <img class="project-image" src="images/bicol-express.jpg" alt="bicol-express" />
+                    <p class="project-title">Bicol Express</p>
+                </a>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>
+            Copyright ©
+                <script>document.write(new Date().getFullYear())</script>
+            shairatorio
+            </p>
+            <a href="https://github.com/shairatorio" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </footer>
+    </div>
 </body>
 </html>
