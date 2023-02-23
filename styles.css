@@ -68,47 +68,32 @@ header {
     margin-top: 2rem; /* 20px */
 }
 
-.project {
+.bg {
     background: var(--color-dark-brown);
     border-radius: 0.8rem; /* 8px */
 }
 
-.project-tile {
+.tile {
     transition: transform .2s; /* Animation */
     margin: 0 auto;
 }
 
-.project-tile:hover {
+.tile:hover {
     transform: scale(1.1); /* (150% zoom - Note: if the zoom is 
     too large, it will go outside of the viewport) */
 }
 
-.project-title {
+.title {
     font-size: 1.6rem; /* 16px */
     text-align: center;
     color: var(--primary-light);
 }
 
-.project-image {
+.index-image {
     height: calc(100% - 4rem); /* 68px */
     width: 100%;
-    object-fit: cover;
     border-radius: 0.8rem 0.8rem 0 0; /* 8px */
-}
-
-.footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem; /* 10px */
-    width: 100%;
-    padding: 1rem; /* 10px */
-    color: var(--primary-light);
-    font-size: 2rem; /* 20px */
-    background-color: var(--main-gray);
+    object-fit: cover;
 }
 
 .fa-github {
@@ -125,6 +110,60 @@ a:link {
     text-decoration: none; 
 }
 
+h1 {
+    text-align: center;
+}
+
+.flex-content {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* border: 2px solid violet; */
+}
+
+.subindex-image {
+    width: 500px;
+}
+
+.flex-box {
+    /* border: 2px solid blue; */
+    padding: 20px;
+}
+
+.desc {
+    text-align: justify;
+}
+
+.left {
+    border: 2px solid orange;
+    /* flex-basis: 30%; */
+}
+
+.right {
+    /* width: 900px; */
+    border: 2px solid yellow;
+}
+
+ul, ol {
+    list-style-position: inside;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; /* 10px */
+    width: 100%;
+    padding: 1rem; /* 10px */
+    color: var(--primary-light);
+    font-size: 2rem; /* 20px */
+    background-color: var(--main-gray);
+}
+
 /* a, a:visited {
     color: var(--color-beige);
 }
@@ -132,13 +171,6 @@ a:link {
 a:active {
     color: var(--color-beige);
 } */
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
 
 /* ================================================================= */
 /* Media Queries */
