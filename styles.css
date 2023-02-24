@@ -98,7 +98,7 @@ header {
 
 .fa-github {
     color: var(--primary-light);
-    font-size: 2.3rem; /* 23px */
+    font-size: 2rem; /* 20px */
     transition: transform 0.3s ease-in-out;
 }
   
@@ -116,11 +116,11 @@ h1 {
 
 .flex-content {
     display: flex;
-    gap: 20px;
+    gap: 2rem; /* 20 px */
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 95px;
-    margin-top: 30px;
+    margin-bottom: 9.5rem; /* 95 px */;
+    margin-top: 3rem; /* 30 px */
     /* border: 2px solid violet; */
 }
 
@@ -134,8 +134,8 @@ h1 {
 
 .left:nth-child(1) {
     display: inline-block; /* to make the div fit the image */
-    width: 405px; /* replace with the width of your image */
-    height: 360px; /* replace with the height of your image */
+    width: 40.5rem; /* 405 px */; /* replace with the width of your image */
+    height: 36rem; /* 360 px */ /* replace with the height of your image */
     padding: 0;
     /* border-style: none; */
     /* border-radius: 0.8rem !important;
@@ -147,7 +147,7 @@ h1 {
 .flex-box {
     border: 2px solid var(--color-dark-brown);
     border-radius: 0.8rem; /* 8px */
-    padding: 20px;
+    padding: 2rem; /* 20 px */
 }
 
 .desc {
@@ -156,13 +156,13 @@ h1 {
 
 .left {
     /* border: 2px solid orange; */
-    width: 405px;
+    width: 40.5rem; /* 405 px */
     /* height: auto; */
     /* flex-basis: 30%; */
 }
 
 .right {
-    width: 900px;
+    width: 90rem; /* 900 px */
     /* border: 2px solid yellow; */
 }
 
@@ -181,7 +181,7 @@ ul, ol {
     width: 100%;
     padding: 1rem; /* 10px */
     color: var(--primary-light);
-    font-size: 2rem; /* 20px */
+    font-size: 1.5rem; /* 15px */
     background-color: var(--main-gray);
 }
 
@@ -254,6 +254,6 @@ and (max-width: 75em),
     } */
 
     .flex-box {
-       margin: 15px;
+       margin: 1.5rem; /* 15 px */
     }
 }
