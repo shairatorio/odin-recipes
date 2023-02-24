@@ -1,9 +1,19 @@
 # Odin Recipes
 
-Created a basic recipe website for my first project on [The Odin Project](https://www.theodinproject.com/) Curriculum.
+Created a responsive basic recipe website for my first project in [The Odin Project](https://www.theodinproject.com/) Curriculum.
 
-## Lessons Learned
+Credits to [What To Eat PH](https://whattoeatph.com/) for the recipes and photos.
 
-I learned how to use the command line basics, git basics, and HTML Foundations.
+Check the website in this link! 
+➮ [Odin Recipes](https://shairatorio.github.io/odin-recipes/)
+## Languages
+HTML • CSS 
+## Screenshots
 
-The recipes were referenced from https://whattoeatph.com/
+![Desktop Home Page](https://github.com/shairatorio/odin-recipes/blob/main/images/DeskHomePage-1.png?raw=true)
+
+![Desktop Sub Page](https://github.com/shairatorio/odin-recipes/blob/main/images/DeskSubPage-1.png?raw=true)
+
+![Mobile Home Page](https://github.com/shairatorio/odin-recipes/blob/main/images/MobHomePage-1.png?raw=true)
+
+![Mobile Sub Page](https://github.com/shairatorio/odin-recipes/blob/main/images/MobSubPage-2.png?raw=true)
